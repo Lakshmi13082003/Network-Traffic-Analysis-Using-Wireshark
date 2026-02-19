@@ -1,0 +1,139 @@
+1️⃣ Objective
+
+The objective of this task was to capture live network traffic using Wireshark and analyze different network protocols such as TCP, DNS, and HTTP. The goal was to understand packet structure, protocol behavior, and filtering techniques.
+
+
+---
+
+2️⃣ Tools Used
+
+Wireshark (Free Network Protocol Analyzer)
+
+Web Browser (for generating HTTP/HTTPS traffic)
+
+Command Prompt (for ping testing)
+
+
+
+---
+
+3️⃣ Procedure Followed
+
+1. Installed and launched Wireshark.
+
+
+2. Selected the active network interface (Wi-Fi/Ethernet).
+
+
+3. Started packet capture.
+
+
+4. Generated traffic by:
+
+Browsing websites
+
+Using ping command
+
+
+
+5. Stopped the capture after ~1 minute.
+
+
+6. Applied protocol filters:
+
+tcp
+
+dns
+
+http
+
+
+
+7. Exported the captured file in .pcapng format.
+
+
+
+
+---
+
+4️⃣ Files Submitted
+
+normal w.pcapng – General traffic capture
+
+tcp w.pcapng – Filtered TCP traffic capture
+
+
+
+---
+
+5️⃣ Protocols Identified
+
+During analysis, the following protocols were observed:
+
+✅ 1. TCP (Transmission Control Protocol)
+
+Used for reliable communication.
+
+Observed TCP 3-way handshake (SYN, SYN-ACK, ACK).
+
+Ensures ordered and error-checked delivery.
+
+
+✅ 2. DNS (Domain Name System)
+
+Converts domain names into IP addresses.
+
+Observed DNS query and DNS response packets.
+
+
+✅ 3. HTTP/HTTPS
+
+HTTP used for web communication.
+
+HTTPS traffic was encrypted.
+
+Observed request-response pattern.
+
+
+✅ 4. ICMP (Internet Control Message Protocol)
+
+Seen during ping testing.
+
+Used for network diagnostics.
+
+
+
+---
+
+6️⃣ Packet Analysis Observations
+
+Source and destination IP addresses were visible.
+
+Port numbers identified (e.g., 80 for HTTP, 443 for HTTPS).
+
+TCP handshake confirmed reliable communication.
+
+DNS queries resolved domain names successfully.
+
+HTTPS packets were encrypted and not readable without decryption keys.
+
+
+
+---
+
+7️⃣ Key Concepts Learned
+
+Packet capture
+
+Protocol filtering
+
+TCP/IP model
+
+Network troubleshooting basics
+
+Difference between TCP and UDP
+
+Importance of DNS in web browsing
+
+
+
